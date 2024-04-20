@@ -7,41 +7,24 @@ using System.Windows.Input;
 
 namespace EjemploPatronesAD
 {
-    public interface ICommand
+    public class Player : Prototype<Player>
     {
-        void Execute();
+        public Player Fullclone()
+        {
+            Player clone = (Player)this.MemberwiseClone();
+            return clone;
+        }
+
+        public Player PartialClone()
+        {
+            return (Player)this.MemberwiseClone();
+        }
+
+        public delegate void Actions();
+        public void Action(Actions X)
+        {
+            X.DynamicInvoke();
+        }
+
     }
-
-    class SaltoComplejo : ICommand
-    {
-        private string accion = string.Empty;
-
-        public SaltoComplejo(string accion)
-        {
-            this.accion = accion;
-        }
-
-        public void Execute()
-        {
-            Console.WriteLine($"Salta complejamente ({this.accion})");
-        }
-    }
-
-    class EscudoEnergia : ICommand
-    {
-        private string _accion = string.Empty;
-
-        public EscudoEnergia(string accion)
-        {
-            this._accion = accion;
-        }
-
-        public void Execute()
-        {
-            Console.WriteLine($"Activación de escudo de energia ({this._accion})");
-        }
-    }
-
-
-
 }
