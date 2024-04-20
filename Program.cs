@@ -242,7 +242,7 @@ while (Input != "3" || Input == null)
                 DefaultPlayer.DoAction(() => new EscudoEnergia(i).Execute());
             }
 
-            Input = null;
+            Input = "0";
         }
     }
 
