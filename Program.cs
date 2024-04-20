@@ -15,19 +15,22 @@ Console.WriteLine("\n");
 
 while (Input != "3" || Input == null)
 {
-    Console.WriteLine("Ingrese 1 para hacer una copia completa, 2 para una copia parcial o 3 para salir.");
+    Console.WriteLine("Ingrese 1 para hacer un salto complejo, 2 para activar un escudo de energia o 3 para salir.");
     Console.Write("Solicitud: ");
     Input = Console.ReadLine();
 
     if (Input == "1") 
     {
+        Console.Write("Indique a qué dirección desea saltar: ");
+        var i = Console.ReadLine();
+        DefaultPlayer.DoAction(() => new SaltoComplejo(i).Execute());
 
     }
     else if (Input == "2") 
     {
-        
+        Console.Write("Indique qué tipo de escudo de energía desea activar:");
+        var i = Console.ReadLine();
+        DefaultPlayer.DoAction(() => new EscudoEnergia(i).Execute());
     }
-
-    DefaultPlayer.DoAction(() => new SaltoComplejo("Arriba").Execute());
 
 }
