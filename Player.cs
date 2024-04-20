@@ -44,15 +44,15 @@ namespace EjemploPatronesAD
         {
             Player clone = (Player)this.MemberwiseClone();
             clone.name = new string(this.name);
-            clone.health = new int(this.health);
-            clone.level = new int(this.level);
-            clone.experience = new int(this.experience);
-            clone.score = new int(this.score);
-            clone.strength = new int(this.strength);
-            clone.agility = new int(this.agility);
-            clone.stamina = new int(this.stamina);
-            clone.intellect = new int(this.intellect);
-            clone.spirit = new int(this.spirit);
+            clone.health = this.health;
+            clone.level = this.level;
+            clone.experience = this.experience;
+            clone.score = this.score;
+            clone.strength = this.strength;
+            clone.agility = this.agility;
+            clone.stamina = this.stamina;
+            clone.intellect = this.intellect;
+            clone.spirit = this.spirit;
             return clone;
         }
 
