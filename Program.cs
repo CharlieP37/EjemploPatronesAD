@@ -50,7 +50,7 @@ while (Input != "3" || Input == null)
 
         Player newplayer = DefaultPlayer.Fullclone();
 
-        Console.WriteLine(newplayer.Name);
+        Console.WriteLine("Nombre: " + newplayer.Name);
 
         var i = Console.ReadLine();
 
@@ -59,7 +59,7 @@ while (Input != "3" || Input == null)
             newplayer.Name = i;
         }
 
-        Console.WriteLine(newplayer.Health);
+        Console.WriteLine("Salud: " + newplayer.Health);
 
         i = Console.ReadLine();
 
@@ -75,7 +75,7 @@ while (Input != "3" || Input == null)
             }
         }
 
-        Console.WriteLine(newplayer.Level);
+        Console.WriteLine("Nivel: " + newplayer.Level);
 
         i = Console.ReadLine();
 
@@ -91,7 +91,7 @@ while (Input != "3" || Input == null)
             }
         }
 
-        Console.WriteLine(newplayer.Experience);
+        Console.WriteLine("Experiencia: " + newplayer.Experience);
 
         i = Console.ReadLine();
 
@@ -107,7 +107,7 @@ while (Input != "3" || Input == null)
             }
         }
 
-        Console.WriteLine(newplayer.Score);
+        Console.WriteLine("Score: " + newplayer.Score);
 
         i = Console.ReadLine();
 
@@ -123,7 +123,7 @@ while (Input != "3" || Input == null)
             }
         }
 
-        Console.WriteLine(newplayer.Strength);
+        Console.WriteLine("Fuerza: " + newplayer.Strength);
 
         i = Console.ReadLine();
 
@@ -139,7 +139,7 @@ while (Input != "3" || Input == null)
             }
         }
 
-        Console.WriteLine(newplayer.Agility);
+        Console.WriteLine("Agilidad: " + newplayer.Agility);
 
         i = Console.ReadLine();
 
@@ -155,7 +155,7 @@ while (Input != "3" || Input == null)
             }
         }
 
-        Console.WriteLine(newplayer.Stamina);
+        Console.WriteLine("Resistencia: " + newplayer.Stamina);
 
         i = Console.ReadLine();
 
@@ -171,7 +171,7 @@ while (Input != "3" || Input == null)
             }
         }
 
-        Console.WriteLine(newplayer.Intellect);
+        Console.WriteLine("Intelecto: " + newplayer.Intellect);
 
         i = Console.ReadLine();
 
@@ -187,7 +187,7 @@ while (Input != "3" || Input == null)
             }
         }
 
-        Console.WriteLine(newplayer.Spirit);
+        Console.WriteLine("Espiritu: " + newplayer.Spirit);
 
         i = Console.ReadLine();
 
