@@ -43,6 +43,16 @@ namespace EjemploPatronesAD
         public Player Fullclone()
         {
             Player clone = (Player)this.MemberwiseClone();
+            clone.name = new string(this.name);
+            clone.health = new int(this.health);
+            clone.level = new int(this.level);
+            clone.experience = new int(this.experience);
+            clone.score = new int(this.score);
+            clone.strength = new int(this.strength);
+            clone.agility = new int(this.agility);
+            clone.stamina = new int(this.stamina);
+            clone.intellect = new int(this.intellect);
+            clone.spirit = new int(this.spirit);
             return clone;
         }
 
