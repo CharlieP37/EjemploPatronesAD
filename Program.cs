@@ -35,6 +35,8 @@ Console.WriteLine("Resistencia: " + DefaultPlayer.Stamina);
 Console.WriteLine("Intelecto: " + DefaultPlayer.Intellect);
 Console.WriteLine("Espiritu: " + DefaultPlayer.Spirit);
 
+playerlist.Add(DefaultPlayer);
+
 Console.WriteLine("\n");
 
 while (Input != "3" || Input == null)
