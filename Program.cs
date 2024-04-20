@@ -13,7 +13,7 @@ Console.WriteLine("Personaje default:");
 
 Player DefaultPlayer = new Player();
 
-DefaultPlayer.Name = "Defaul";
+DefaultPlayer.Name = "Default";
 DefaultPlayer.Health = 100;
 DefaultPlayer.Level = 1;
 DefaultPlayer.Experience = 0;
@@ -46,7 +46,7 @@ while (Input != "3" || Input == null)
     if (Input == "1") 
     {
         Console.WriteLine("Indique los sigueintes atributos del personaje que desea cambiar o dejar");
-        Console.Write("Deje el campo vació para no hacer cambio");
+        Console.WriteLine("Deje el campo vació para no hacer cambio");
 
         Player newplayer = DefaultPlayer.Fullclone();
 
@@ -240,6 +240,7 @@ while (Input != "3" || Input == null)
                 DefaultPlayer.DoAction(() => new EscudoEnergia(i).Execute());
             }
 
+            Input = null;
         }
     }
 
