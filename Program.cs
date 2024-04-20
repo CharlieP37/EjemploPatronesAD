@@ -28,6 +28,6 @@ while (Input != "3" || Input == null)
         
     }
 
-    DefaultPlayer.Action(() => new SaltoComplejo("Arriba").Execute());
+    DefaultPlayer.DoAction(() => new SaltoComplejo("Arriba").Execute());
 
 }
