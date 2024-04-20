@@ -20,8 +20,7 @@ namespace EjemploPatronesAD
             return (Player)this.MemberwiseClone();
         }
 
-        public delegate void Actions();
-        public void Action(Actions X)
+        public void Action(Action X)
         {
             X.DynamicInvoke();
         }

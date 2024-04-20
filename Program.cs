@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using EjemploPatronesAD;
+using System.Resources;
 
 string? Input = "";
 
@@ -26,4 +27,7 @@ while (Input != "3" || Input == null)
     {
         
     }
+
+    DefaultPlayer.Action(() => new SaltoComplejo("Arriba").Execute());
+
 }
