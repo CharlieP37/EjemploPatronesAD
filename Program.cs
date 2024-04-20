@@ -222,7 +222,10 @@ while (Input != "3" || Input == null)
     }
     else if (Input == "2")
     {
-        while (Input != "1" || Input != "2" || Input == null)
+
+        Input = "";
+
+        while (Input != "1" && Input != "2" || Input == null)
         {
             Console.WriteLine("Ingrese 1 para hacer un salto complejo, 2 para activar un escudo de energia.");
             Console.Write("Solicitud: ");
@@ -242,7 +245,6 @@ while (Input != "3" || Input == null)
                 DefaultPlayer.DoAction(() => new EscudoEnergia(i).Execute());
             }
 
-            Input = "0";
         }
     }
 
