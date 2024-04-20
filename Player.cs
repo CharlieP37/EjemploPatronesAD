@@ -22,23 +22,23 @@ namespace EjemploPatronesAD
 
         public string Name { get => name; set => name = value; }
 
-        int Health { get => health; set => health = value; }
+        public int Health { get => health; set => health = value; }
 
-        int Level { get => level; set => level = value; }
+        public int Level { get => level; set => level = value; }
 
-        int Experience { get => experience; set => experience = value; }
+        public int Experience { get => experience; set => experience = value; }
 
-        int Score { get => score; set => score = value; }
+        public int Score { get => score; set => score = value; }
 
-        int Strength { get => strength; set => strength = value; }
+        public int Strength { get => strength; set => strength = value; }
 
-        int Agility { get => agility; set => agility = value; }
+        public int Agility { get => agility; set => agility = value; }
 
-        int Stamina { get => stamina; set => stamina = value; }
+        public int Stamina { get => stamina; set => stamina = value; }
 
-        int Intellect { get => intellect; set => intellect = value; }
+        public int Intellect { get => intellect; set => intellect = value; }
 
-        int Spirit { get => spirit; set => spirit = value; }
+        public int Spirit { get => spirit; set => spirit = value; }
 
         public Player Fullclone()
         {
