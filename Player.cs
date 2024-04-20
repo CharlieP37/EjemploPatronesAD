@@ -3,20 +3,45 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace EjemploPatronesAD
 {
-    public class Player : Prototype<Player>
+    public interface ICommand
     {
-        public Player Fullclone()
+        void Execute();
+    }
+
+    class SaltoComplejo : ICommand
+    {
+        private string accion = string.Empty;
+
+        public SaltoComplejo(string accion)
         {
-            Player clone = (Player) this.MemberwiseClone();
-            return clone;
+            this.accion = accion;
         }
 
-        public Player PartialClone()
+        public void Execute()
         {
-            return (Player) this.MemberwiseClone();
+            Console.WriteLine($"Salta complejamente ({this.accion})");
         }
     }
+
+    class EscudoEnergia : ICommand
+    {
+        private string _accion = string.Empty;
+
+        public EscudoEnergia(string accion)
+        {
+            this._accion = accion;
+        }
+
+        public void Execute()
+        {
+            Console.WriteLine($"Activación de escudo de energia ({this._accion})");
+        }
+    }
+
+
+
 }
